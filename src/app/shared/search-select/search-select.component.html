@@ -1,0 +1,10 @@
+<ion-item button detail="false" (click)="openSelect()">
+  <ion-input 
+    #inputRef
+    [label]="label"
+    [formControl]="control"
+    labelPlacement="floating"
+    [clearInput]="true"
+    (ionFocus)="onChange()"
+  ></ion-input>
+</ion-item>

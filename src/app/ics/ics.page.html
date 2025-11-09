@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Conciertos de Heavy Metal en España</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div id="controls">
+    <input type="file" id="fileInput" accept=".ics" (change)="submit($event)" />
+  </div>
+
+  <div id="output">
+    @if(isReading){
+      <p class='no-events'>Reading...</p>
+    }
+    @if(!concerts){
+      <p class='no-events'>No upcoming concerts found.</p>
+    } 
+    @for(event of concerts; track event) {
+      <div class="card">
+        @if(event.flyer){
+          <img [src]="event.flyer" alt="Flyer" class="flyer">
+        } @else {
+          <div class="flyer"></div>
+        }
+        <div class="card-content">
+          <div class="bands">{{ getBands(event) }}</div>
+          <div class="date">{{ getParsedDate(event) }}</div>
+          <div class="location">
+            <img [src]="getFlagSVG(event.location)" class="flag" alt="flag">
+            {{ event.location || "Unknown" }}
+          </div>
+          <div class="place">{{ event.place || "" }}</div>
+        </div>
+      </div>
+    }
+  </div>
+</ion-content>

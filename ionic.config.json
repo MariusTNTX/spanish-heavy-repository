@@ -1,0 +1,7 @@
+{
+  "name": "spanish-heavy-repository",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

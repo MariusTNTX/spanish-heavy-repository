@@ -1,0 +1,13 @@
+<form>
+  <ion-list id="inbox-list">
+    <ion-list-header>Conciertos Metal España</ion-list-header>
+    <ion-note>Repositorio Público</ion-note>
+  
+    <app-search-select label="Banda" [options]="options" [control]="bandControl"></app-search-select>
+    <app-search-select label="Ciudad" [options]="options" [control]="locationControl"></app-search-select>
+    <app-search-select label="Recinto" [options]="options" [control]="placeControl"></app-search-select>
+    <app-search-select label="Género" [options]="options" [control]="genreControl"></app-search-select>
+    <!-- Intervalo Fechas - DATE -->
+    
+  </ion-list>
+</form>

@@ -167,9 +167,9 @@ export class IcsPage {
       ?.map((event: MetalEvent) => 
         ({ 
           ...event, 
-          bands: event.bands?.map(band => (METAL_BANDS.find(b => b.inputs.includes(band))?.name) || (band.includes('TBC') ? band : '_NEW_' + band)),
-          location: (METAL_LOCATIONS.find(l => l.inputs.includes(event.location || ''))?.name) || ('_NEW_' + event.location),
-          place: (METAL_PLACES.find(p => p.inputs.includes(event.place || ''))?.name) || (event.place?.includes('TBC') ? event.place : '_NEW_' + event.place)
+          bands: event.bands?.map(band => (METAL_BANDS.find(b => b.inputs.includes(band))?.name) || (band.includes('TBC') ? band : band + '_NEW_')),
+          location: (METAL_LOCATIONS.find(l => l.inputs.includes(event.location || ''))?.name) || (event.location + '_NEW_'),
+          place: (METAL_PLACES.find(p => p.inputs.includes(event.place || ''))?.name) || (event.place?.includes('TBC') ? event.place : event.place + '_NEW_')
         })
       );
     console.log('EVENTS', this.concerts);
@@ -177,15 +177,16 @@ export class IcsPage {
 
   private printLocations(){
     const set = new Set<string>();
+    METAL_LOCATIONS.map(l => set.add(l.name));
     this.concerts?.forEach(e => set.add(e.location));
     const list = Array.from(set)
       .sort((a,b) => a.localeCompare(b))
       .map((location: string) => 
-        METAL_LOCATIONS?.find(l => l.inputs.includes(location)) || 
+        METAL_LOCATIONS?.find(l => l.name === location ||  l.inputs.includes(location)) || 
         ({ 
-          inputs: ['_NEW_', location],
+          inputs: [location],
           name: location,
-          community: "_NEW_",
+          community: '_NEW_',
         })
       )
       .reduce((result: MetalLocation[], item: MetalLocation) => {
@@ -199,6 +200,7 @@ export class IcsPage {
 
   private printPlaces(){
     const set = new Set<string>();
+    METAL_PLACES.map(p => set.add(`${p.name};${p.location}`));
     this.concerts?.forEach(e => {
       if(e.place && !e.place.includes('TBC')){
         set.add(`${e.place};${e.location}`);
@@ -207,10 +209,10 @@ export class IcsPage {
     const list = Array.from(set)
       .sort((a,b) => a.localeCompare(b))
       .map(locPlace => 
-        METAL_PLACES?.find(p => p.inputs.includes(locPlace.split(';')[0])) || 
+        METAL_PLACES?.find(p => p.name === locPlace.split(';')[0] || p.inputs.includes(locPlace.split(';')[0])) || 
         ({
-          inputs: ['_NEW_', locPlace.split(';')[0]],
-          name: locPlace.split(';')[0],
+          inputs: [locPlace.split(';')[0]],
+          name: locPlace.split(';')[0] + '_NEW_',
           location: METAL_LOCATIONS.find(l => l.inputs.includes(locPlace.split(';')[1]))?.name || locPlace.split(';')[1],
         }) as MetalPlace
       )
@@ -225,13 +227,14 @@ export class IcsPage {
   
   private printBands(){
     const set = new Set<string>();
+    METAL_BANDS.map(b => set.add(b.name));
     this.concerts?.forEach(e => e.bands?.forEach((b: string) => !b.includes('TBC') && set.add(b)));
     const list = Array.from(set)
       .sort((a,b) => a.localeCompare(b))
-      .map((band: string) => METAL_BANDS?.find(b => b.inputs.includes(band)) || 
+      .map((band: string) => METAL_BANDS?.find(b => b.name === band || b.inputs.includes(band)) || 
         ({
-          inputs: ['_NEW_', band],
-          name: band,
+          inputs: [band],
+          name: band + '_NEW_',
           genres: [],
         })
       )
@@ -246,14 +249,15 @@ export class IcsPage {
   
   private printFests(){
     const set = new Set<string>();
+    METAL_FESTS.map(f => set.add(`${f.name};${f.location};${f.place}`));
     this.concerts?.forEach(e => e.fest && set.add(`${e.fest};${e.location};${e.place}`));
     const list = Array.from(set)
       .sort((a,b) => a.localeCompare(b))
       .map((festLocPlace: string) => 
-        METAL_FESTS?.find(p => p.inputs.includes(festLocPlace.split(';')[0])) || 
+        METAL_FESTS?.find(p => p.name === festLocPlace.split(';')[0] || p.inputs.includes(festLocPlace.split(';')[0])) || 
         ({
-          inputs: ['_NEW_', festLocPlace.split(';')[0]],
-          name: festLocPlace.split(';')[0],
+          inputs: [festLocPlace.split(';')[0]],
+          name: festLocPlace.split(';')[0] + '_NEW_',
           location: METAL_LOCATIONS.find(l => l.inputs.includes(festLocPlace.split(';')[1]))?.name || festLocPlace.split(';')[1],
           place: METAL_PLACES.find(p => p.inputs.includes(festLocPlace.split(';')[2]))?.name || festLocPlace.split(';')[2],
           bands: this.concerts?.find(c => c.fest === festLocPlace.split(';')[0])?.bands?.map((band: string) => METAL_BANDS.find(b => b.inputs.includes(band))?.name || band) || []

@@ -36,28 +36,14 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'CASTILLA_LA_MANCHA',
   },
   {
-    inputs: ['Albacete (La Gineta)', 'La Gineta (Albacete)', 'La Gineta'],
-    name: 'La Gineta (Albacete)',
-    community: 'CASTILLA_LA_MANCHA',
-  },
-  {
-    inputs: [
-      'Alicante (Sant Vicent del Raspeig)',
-      'Sant Vicent del Raspeig (Alicante)',
-      'Sant Vicent del Raspeig',
-    ],
-    name: 'Sant Vicent del Raspeig (Alicante)',
-    community: 'VALENCIA',
-  },
-  {
-    inputs: ['Alicante (Villena)', 'Villena (Alicante)', 'Villena'],
-    name: 'Villena (Alicante)',
-    community: 'VALENCIA',
-  },
-  {
     inputs: ['Baleares'],
     name: 'Baleares',
     community: 'BALEARES',
+  },
+  {
+    inputs: ['Badalona', 'Barcelona (Badalona)', 'Badalona (Barcelona)'],
+    name: 'Badalona (Barcelona)',
+    community: 'BARCELONA',
   },
   {
     inputs: ['Barcelona'],
@@ -75,19 +61,29 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'CASTILLA_Y_LEON',
   },
   {
+    inputs: ['Murcia (Cartagena)', 'Cartagena (Murcia)', 'Cartagena'],
+    name: 'Cartagena (Murcia)',
+    community: 'MURCIA',
+  },
+  {
+    inputs: ['Málaga (Fuengirola)', 'Fuengirola (Málaga)', 'Fuengirola'],
+    name: 'Fuengirola (Málaga)',
+    community: 'ANDALUCIA',
+  },
+  {
     inputs: ['Gijón'],
     name: 'Gijón',
     community: 'ASTURIAS',
   },
   {
+    inputs: ['Albacete (La Gineta)', 'La Gineta (Albacete)', 'La Gineta'],
+    name: 'La Gineta (Albacete)',
+    community: 'CASTILLA_LA_MANCHA',
+  },
+  {
     inputs: ['Leganés', 'Leganés (Madrid)', 'Madrid (Leganés)'],
     name: 'Leganés (Madrid)',
     community: 'MADRID',
-  },
-  {
-    inputs: ['Lugo (Viveiro)', 'Viveiro (Lugo)', 'Viveiro'],
-    name: 'Viveiro (Lugo)',
-    community: 'GALICIA',
   },
   {
     inputs: ['Madrid'],
@@ -100,18 +96,13 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'ANDALUCIA',
   },
   {
-    inputs: ['Málaga (Fuengirola)', 'Fuengirola (Málaga)', 'Fuengirola'],
-    name: 'Fuengirola (Málaga)',
-    community: 'ANDALUCIA',
+    inputs: ['Valencia (Massanassa)', 'Massanassa (Valencia)', 'Massanassa'],
+    name: 'Massanassa (Valencia)',
+    community: 'VALENCIA',
   },
   {
     inputs: ['Murcia'],
     name: 'Murcia',
-    community: 'MURCIA',
-  },
-  {
-    inputs: ['Murcia (Cartagena)', 'Cartagena (Murcia)', 'Cartagena'],
-    name: 'Cartagena (Murcia)',
     community: 'MURCIA',
   },
   {
@@ -135,6 +126,15 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'PAIS_VASCO',
   },
   {
+    inputs: [
+      'Alicante (Sant Vicent del Raspeig)',
+      'Sant Vicent del Raspeig (Alicante)',
+      'Sant Vicent del Raspeig',
+    ],
+    name: 'Sant Vicent del Raspeig (Alicante)',
+    community: 'VALENCIA',
+  },
+  {
     inputs: ['Santiago de Compostela', 'Santiago'],
     name: 'Santiago de Compostela',
     community: 'GALICIA',
@@ -145,14 +145,24 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'ANDALUCIA',
   },
   {
+    inputs: ['Martín de la Jara', 'Sevilla (Martín de la Jara)', 'Martín de la Jara (Sevilla)'],
+    name: 'Martín de la Jara (Sevilla)',
+    community: 'ANDALUCIA',
+  },
+  {
+    inputs: ['Zaratán', 'Valladolid (Zaratán)', 'Zaratán (Valladolid)'],
+    name: 'Zaratán (Valladolid)',
+    community: 'CASTILLA_Y_LEON',
+  },
+  {
     inputs: ['Valencia'],
     name: 'Valencia',
     community: 'VALENCIA',
   },
   {
-    inputs: ['Valencia (Massanassa)', 'Massanassa (Valencia)', 'Massanassa'],
-    name: 'Massanassa (Valencia)',
-    community: 'VALENCIA',
+    inputs: ['Valladolid'],
+    name: 'Valladolid',
+    community: 'CASTILLA_Y_LEON',
   },
   {
     inputs: ['Villaverde', 'Villaverde (Madrid)', 'Madrid (Villaverde)'],
@@ -160,9 +170,19 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'MADRID',
   },
   {
-    inputs: ['Vitoria'],
-    name: 'Vitoria',
+    inputs: ['Alicante (Villena)', 'Villena (Alicante)', 'Villena'],
+    name: 'Villena (Alicante)',
+    community: 'VALENCIA',
+  },
+  {
+    inputs: ['Vitoria', 'Vitoria-Gasteiz', 'Vitoria Gasteiz'],
+    name: 'Vitoria-Gasteiz',
     community: 'PAIS_VASCO',
+  },
+  {
+    inputs: ['Lugo (Viveiro)', 'Viveiro (Lugo)', 'Viveiro'],
+    name: 'Viveiro (Lugo)',
+    community: 'GALICIA',
   },
   {
     inputs: ['Zamora'],

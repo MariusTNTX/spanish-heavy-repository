@@ -2,6 +2,13 @@ import { MetalFest } from '../models/db.model';
 
 export const METAL_FESTS: MetalFest[] = [
   {
+    inputs: ['Azkena Rock Festival'],
+    name: 'Azkena Rock Festival',
+    location: 'Vitoria-Gasteiz',
+    place: 'Recinto Ferial de Vitoria',
+    bands: ['Alice Cooper', 'Corrosion of Conformity', 'Therapy?', 'Voivod'],
+  },
+  {
     inputs: ['Be Prog! My Friend'],
     name: 'Be Prog! My Friend',
     location: 'Barcelona',
@@ -12,7 +19,7 @@ export const METAL_FESTS: MetalFest[] = [
     inputs: ['GinetaRock'],
     name: 'GinetaRock',
     location: 'La Gineta (Albacete)',
-    place: 'Recinto Salón Municipal',
+    place: 'Recinto Salón Municipal de La Gineta',
     bands: ['Seven Spires', 'Roy Khan'],
   },
   {

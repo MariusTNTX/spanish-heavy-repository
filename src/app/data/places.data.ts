@@ -22,9 +22,9 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Madrid',
   },
   {
-    inputs: ['But'],
-    name: 'Sala But',
-    location: 'Madrid',
+    inputs: ['Bilbao Arena'],
+    name: 'Bilbao Arena',
+    location: 'Bilbao',
   },
   {
     inputs: ['Capitol'],
@@ -37,19 +37,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Viveiro (Lugo)',
   },
   {
-    inputs: ['Copérnico'],
-    name: 'Sala Copérnico',
-    location: 'Madrid',
+    inputs: ['Consultorio de Martín de la Jara'],
+    name: 'Consultorio de Martín de la Jara',
+    location: 'Martín de la Jara (Sevilla)',
   },
   {
     inputs: ['Core'],
     name: 'Core',
     location: 'Málaga',
-  },
-  {
-    inputs: ['Custom'],
-    name: 'Sala Custom',
-    location: 'Sevilla',
   },
   {
     inputs: ['D8'],
@@ -67,9 +62,9 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Albacete',
   },
   {
-    inputs: ['Fanatic'],
-    name: 'Sala Fanatic',
-    location: 'Sevilla',
+    inputs: ['Estraperlo', 'Sala Estraperlo'],
+    name: 'Sala Estraperlo',
+    location: 'Badalona (Barcelona)',
   },
   {
     inputs: ['Foment Martinenc', 'Foment'],
@@ -87,11 +82,6 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Gijón',
   },
   {
-    inputs: ['Groove'],
-    name: 'Sala Groove',
-    location: 'Portugalete',
-  },
-  {
     inputs: ['Iberdrola Music'],
     name: 'Iberdrola Music',
     location: 'Villaverde',
@@ -102,7 +92,12 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Zamora',
   },
   {
-    inputs: ['La Carpa (Poble Espanyol)', 'La Carpa'],
+    inputs: ['Jardins del Real'],
+    name: 'Jardins del Real',
+    location: 'Valencia',
+  },
+  {
+    inputs: ['La Carpa (Poble Espanyol)', 'La Carpa', 'Poble Espanyol'],
     name: 'La Carpa (Poble Espanyol)',
     location: 'Barcelona',
   },
@@ -112,34 +107,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Barcelona',
   },
   {
-    inputs: ['La Riviera'],
-    name: 'Sala La Riviera',
-    location: 'Madrid',
-  },
-  {
     inputs: ["Lennon's Club", "Lennon's"],
     name: "Lennon's Club",
     location: 'Barcelona',
   },
   {
-    inputs: ['Madison'],
-    name: 'Sala Madison',
-    location: 'Massanassa (Valencia)',
-  },
-  {
-    inputs: ['Mamba'],
-    name: 'Sala Mamba!',
-    location: 'Murcia',
-  },
-  {
     inputs: ['Marenostrum Fuengirola'],
     name: 'Marenostrum Fuengirola',
     location: 'Fuengirola (Málaga)',
-  },
-  {
-    inputs: ['Mon'],
-    name: 'Sala Mon',
-    location: 'Madrid',
   },
   {
     inputs: ['Monte do Gozo'],
@@ -157,19 +132,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Madrid',
   },
   {
-    inputs: ['Nazca'],
-    name: 'Sala Nazca',
-    location: 'Madrid',
+    inputs: ['Navarra Arena'],
+    name: 'Navarra Arena',
+    location: 'Pamplona',
   },
   {
     inputs: ['Nueva Cubierta de Leganés', 'Cubierta de Leganés'],
     name: 'Nueva Cubierta de Leganés',
     location: 'Leganés (Madrid)',
-  },
-  {
-    inputs: ['Oasis'],
-    name: 'Sala Oasis',
-    location: 'Zaragoza',
   },
   {
     inputs: ['Palacio Vistalegre', 'Vistalegre'],
@@ -181,9 +151,11 @@ export const METAL_PLACES: MetalPlace[] = [
       'Palau Olimpic Badalona',
       'Palau Olimpic',
       'Olimpic Badalona',
+      'Olimpic Arena Badalona', 
+      'Olimpic Arena',
       'Olimpic',
     ],
-    name: 'Palau Olimpic Badalona',
+    name: 'Palau Olimpic Arena Badalona',
     location: 'Badalona (Barcelona)',
   },
   {
@@ -195,11 +167,6 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Parc de Can Zam'],
     name: 'Parc de Can Zam',
     location: 'Barcelona',
-  },
-  {
-    inputs: ['París 15'],
-    name: 'Sala París 15',
-    location: 'Málaga',
   },
   {
     inputs: ['Parque el Batel'],
@@ -222,44 +189,19 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Villena (Alicante)',
   },
   {
-    inputs: ['Razzmatazz 1'],
-    name: 'Sala Razzmatazz 1',
-    location: 'Barcelona',
+    inputs: ['Porta Caeli'],
+    name: 'Porta Caeli',
+    location: 'Valladolid',
   },
   {
-    inputs: ['Razzmatazz 2'],
-    name: 'Sala Razzmatazz 2',
-    location: 'Barcelona',
+    inputs: ['Recinto Ferial de Vitoria', 'Recinto Ferial de Vitoria-Gasteiz'],
+    name: 'Recinto Ferial de Vitoria-Gasteiz',
+    location: 'Vitoria-Gasteiz',
   },
   {
-    inputs: ['Razzmatazz 3'],
-    name: 'Sala Razzmatazz 3',
-    location: 'Barcelona',
-  },
-  {
-    inputs: ['Razzmatazz'],
-    name: 'Sala Razzmatazz',
-    location: 'Barcelona',
-  },
-  {
-    inputs: ['Rebullón'],
-    name: 'Sala Rebullón',
-    location: 'Pontevedra',
-  },
-  {
-    inputs: ['Recinto Salón Municipal'],
-    name: 'Recinto Salón Municipal',
+    inputs: ['Recinto Salón Municipal', 'Recinto Salón Municipal de La Gineta'],
+    name: 'Recinto Salón Municipal de La Gineta',
     location: 'La Gineta (Albacete)',
-  },
-  {
-    inputs: ['Revi Live'],
-    name: 'Sala Revi Live',
-    location: 'Madrid',
-  },
-  {
-    inputs: ['Rock City'],
-    name: 'Sala Rock City',
-    location: 'Valencia',
   },
   {
     inputs: ['Roig Arena', 'Roig'],
@@ -267,68 +209,173 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Valencia',
   },
   {
-    inputs: ['Salamandra'],
-    name: 'Salamandra',
+    inputs: ['But', 'Sala But'],
+    name: 'Sala But',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Copérnico', 'Sala Copérnico'],
+    name: 'Sala Copérnico',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Custom', 'Sala Custom'],
+    name: 'Sala Custom',
+    location: 'Sevilla',
+  },
+  {
+    inputs: ['Fanatic', 'Sala Fanatic', 'Fanátic', 'Sala Fanátic'],
+    name: 'Sala Fanatic',
+    location: 'Sevilla',
+  },
+  {
+    inputs: ['Groove', 'Sala Groove'],
+    name: 'Sala Groove',
+    location: 'Portugalete (Vizcaya)',
+  },
+  {
+    inputs: ['La Riviera', 'Riviera', 'Sala La Riviera', 'Sala Riviera'],
+    name: 'Sala La Riviera',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Madison', 'Sala Madison'],
+    name: 'Sala Madison',
+    location: 'Massanassa (Valencia)',
+  },
+  {
+    inputs: ['Mamba', 'Mamba!', 'Sala Mamba!', 'Sala Mamba'],
+    name: 'Sala Mamba!',
+    location: 'Murcia',
+  },
+  {
+    inputs: ['Mon', 'Sala Mon'],
+    name: 'Sala Mon',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Nazca', 'Sala Nazca'],
+    name: 'Sala Nazca',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Oasis', 'Sala Oasis'],
+    name: 'Sala Oasis',
+    location: 'Zaragoza',
+  },
+  {
+    inputs: ['Sala París 15', 'Sala Paris 15', 'París 15', 'Paris 15'],
+    name: 'Sala París 15',
+    location: 'Málaga',
+  },
+  {
+    inputs: ['Razzmatazz 1', 'Sala Razzmatazz 1'],
+    name: 'Sala Razzmatazz 1',
     location: 'Barcelona',
   },
   {
-    inputs: ['Santana 27', 'Santana'],
+    inputs: ['Razzmatazz 2', 'Sala Razzmatazz 2'],
+    name: 'Sala Razzmatazz 2',
+    location: 'Barcelona',
+  },
+  {
+    inputs: ['Razzmatazz 3', 'Sala Razzmatazz 3'],
+    name: 'Sala Razzmatazz 3',
+    location: 'Barcelona',
+  },
+  {
+    inputs: ['Razzmatazz', 'Sala Razzmatazz'],
+    name: 'Sala Razzmatazz',
+    location: 'Barcelona',
+  },
+  {
+    inputs: ['Rebullón', 'Sala Rebullón', 'Rebullon', 'Sala Rebullon'],
+    name: 'Sala Rebullón',
+    location: 'Pontevedra',
+  },
+  {
+    inputs: ['Revi Live', 'ReviLive', 'Revi-Live', 'Sala Revi Live', 'Sala ReviLive', 'Sala Revi-Live'],
+    name: 'Sala Revi Live',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Rock City', 'Sala Rock City'],
+    name: 'Sala Rock City',
+    location: 'Valencia',
+  },
+  {
+    inputs: ['Santana 27', 'Sala Santana 27', 'Santana', 'Sala Santana'],
     name: 'Sala Santana 27',
     location: 'Bilbao',
   },
   {
-    inputs: ['Silikona'],
+    inputs: ['Silikona', 'Sala Silikona'],
     name: 'Sala Silikona',
     location: 'Madrid',
   },
   {
-    inputs: ['Teatro Real'],
-    name: 'Teatro Real',
-    location: 'Madrid',
-  },
-  {
-    inputs: ['The One', 'One'],
+    inputs: ['The One', 'One', 'Sala The One'],
     name: 'Sala The One',
     location: 'Sant Vicent del Raspeig (Alicante)',
   },
   {
-    inputs: ['Totem'],
+    inputs: ['Totem', 'Sala Totem'],
     name: 'Sala Totem',
     location: 'Pamplona',
   },
   {
-    inputs: ['Tribeca Live', 'Tribeca'],
+    inputs: ['Tribeca Live', 'Tribeca', 'Sala Tribeca', 'Sala Tribeca Live'],
     name: 'Sala Tribeca Live',
     location: 'Oviedo',
   },
   {
-    inputs: ['Upload'],
+    inputs: ['Upload', 'Sala Upload'],
     name: 'Sala Upload',
     location: 'Barcelona',
   },
   {
-    inputs: ['Urban Rock Concept', 'Rock Concept', 'Urban'],
+    inputs: ['Urban Rock Concept', 'Rock Concept', 'Urban Rock', 'Sala Urban Rock Concept', 'Sala Urban Rock', 'Sala Rock Concept'],
     name: 'Sala Urban Rock Concept',
     location: 'Vitoria',
   },
   {
-    inputs: ['Wagon'],
+    inputs: ['Wagon', 'Sala Wagon'],
     name: 'Sala Wagon',
     location: 'Madrid',
   },
   {
-    inputs: ['Wolf'],
+    inputs: ['Wolf', 'WOLF', 'Sala Wolf', 'Sala WOLF'],
     name: 'Sala WOLF',
     location: 'Barcelona',
   },
   {
-    inputs: ['Zentral'],
+    inputs: ['Zentral', 'Sala Zentral'],
     name: 'Sala Zentral',
     location: 'Pamplona',
   },
   {
-    inputs: ['Zulú'],
+    inputs: ['Zulú', 'Sala Zulú'],
     name: 'Sala Zulú',
     location: 'Valencia',
+  },
+  {
+    inputs: ['Salamandra', 'Sala Salamandra'],
+    name: 'Sala Salamandra',
+    location: 'Barcelona',
+  },
+  {
+    inputs: ['Sant Jordi Club'],
+    name: 'Sant Jordi Club',
+    location: 'Barcelona',
+  },
+  {
+    inputs: ['Teatro Real de Madrid', 'Teatro Real (Madrid)', 'Madrid (Teatro Real)', 'Teatro Real'],
+    name: 'Teatro Real de Madrid',
+    location: 'Madrid',
+  },
+  {
+    inputs: ['Zaratán Zona Fun', 'Zona Fun', 'Zaratán'],
+    name: 'Zaratán Zona Fun',
+    location: 'Zaratán (Valladolid)',
   },
 ];

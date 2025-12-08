@@ -1,7 +1,9 @@
 <ion-header [translucent]="false">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-button (click)="showFilters = true">
+        <ion-icon slot="icon-only" name="filter"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <div class="search-input">
       <ion-input [clearInput]="true">
@@ -17,6 +19,24 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+  <ion-modal [isOpen]="showFilters" (didDismiss)="showFilters = false">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Filtros</ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="showFilters = false">
+              <ion-icon slot="icon-only" name="close"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <app-filters></app-filters>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
   @for(event of getEvents(); track event){ @if(showEvents){
   <app-list-event-item [event]="event"></app-list-event-item>
   } @else {

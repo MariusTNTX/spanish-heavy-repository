@@ -1,0 +1,19 @@
+<ion-item button detail="false">
+  <ion-label>{{ label }}</ion-label>
+  <ion-datetime-button datetime="startDate"></ion-datetime-button>
+  <ion-datetime-button datetime="endDate"></ion-datetime-button>
+</ion-item>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="startDate" presentation="date" [formControl]="startControl" [min]="today" [max]="maxStartDate"></ion-datetime>
+    <ion-button (click)="resetStartDate()">Restablecer</ion-button>
+  </ng-template>
+</ion-modal>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="endDate" presentation="date" [formControl]="endControl" [min]="minEndDate"></ion-datetime>
+    <ion-button (click)="resetEndDate()">Restablecer</ion-button>
+  </ng-template>
+</ion-modal>

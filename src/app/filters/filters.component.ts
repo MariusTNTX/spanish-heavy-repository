@@ -1,38 +1,72 @@
 import { Component, OnInit } from '@angular/core';
-import { IonList, IonListHeader, IonNote } from '@ionic/angular/standalone';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { IonList } from '@ionic/angular/standalone';
+import { METAL_BANDS } from '../data/bands.data';
+import { METAL_LOCATIONS } from '../data/locations.data';
+import { METAL_PLACES } from '../data/places.data';
+import { MetalBand } from '../models/db.model';
+import { EventService } from '../services/events/event.service';
+import { FilterService } from '../services/filters/filter.service';
+import { DateSelectComponent } from "../shared/date-select/date-select/date-select.component";
 import { SearchSelectComponent } from "../shared/search-select/search-select.component";
-import { FormControl, FormGroup } from '@angular/forms';
+import { MetalFilters } from './filters.model';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-filters',
   templateUrl: './filters.component.html',
   styleUrls: ['./filters.component.scss'],
-  imports: [IonList, IonListHeader, IonNote, SearchSelectComponent]
+  imports: [IonList, SearchSelectComponent, DateSelectComponent, ReactiveFormsModule]
 })
-export class FiltersComponent  implements OnInit {
+export class FiltersComponent implements OnInit {  
+  public bandOptions: string[] = METAL_BANDS.map(item => item.name);
+  public locationOptions: string[] = METAL_LOCATIONS.map(item => item.name);
+  public placeOptions: string[] = METAL_PLACES.map(item => item.name);
+  public genreOptions: string[] = Array.from(
+    METAL_BANDS.reduce((genres: Set<string>, band: MetalBand) => {
+      band.genres.forEach(g => genres.add(g));
+      return genres;
+    }, new Set<string>())
+  ).sort((a: string, b: string) => a.localeCompare(b));
+  
+  private filterSub!: Subscription;
+  
+  constructor(
+    private readonly eventService: EventService,
+    private readonly filterService: FilterService,
+  ) { }
 
-  public bandControl: FormControl = new FormControl<string|null>(null);
-  public locationControl: FormControl = new FormControl<string|null>(null);
-  public placeControl: FormControl = new FormControl<string|null>(null);
-  public genreControl: FormControl = new FormControl<string|null>(null);
-  public startDateControl: FormControl = new FormControl<Date|null>(null);
-  public endDateControl: FormControl = new FormControl<Date|null>(null);
-
-  public filterForm: FormGroup = new FormGroup({
-    band: this.bandControl,
-    location: this.locationControl,
-    place: this.placeControl,
-    genre: this.genreControl,
-    startDate: this.startDateControl,
-    endDate: this.endDateControl,
-  });
-
-  public options: string[] = [ 'Megadeth', 'Nightwish', 'Eluveitie' ];
-
-  constructor() { }
-
-  ngOnInit() {
-    
+  ngOnInit(): void {
+    this.filterSub = this.filterService.filterForm.valueChanges.subscribe(filters => {
+      this.eventService.applyFilters(filters as MetalFilters);
+    });
   }
 
+  ngOnDestroy(): void {
+    this.filterSub.unsubscribe();
+  }
+
+  get startDateControl(): FormControl {
+    return this.filterService.startDateControl;
+  }
+
+  get endDateControl(): FormControl {
+    return this.filterService.endDateControl;
+  }
+
+  get bandControl(): FormControl {
+    return this.filterService.bandControl;
+  }
+
+  get locationControl(): FormControl {
+    return this.filterService.locationControl;
+  }
+
+  get placeControl(): FormControl {
+    return this.filterService.placeControl;
+  }
+
+  get genreControl(): FormControl {
+    return this.filterService.genreControl;
+  }
 }

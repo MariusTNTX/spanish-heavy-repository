@@ -36,14 +36,14 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'CASTILLA_LA_MANCHA',
   },
   {
-    inputs: ['Baleares'],
-    name: 'Baleares',
-    community: 'BALEARES',
-  },
-  {
     inputs: ['Badalona', 'Barcelona (Badalona)', 'Badalona (Barcelona)'],
     name: 'Badalona (Barcelona)',
     community: 'BARCELONA',
+  },
+  {
+    inputs: ['Baleares'],
+    name: 'Baleares',
+    community: 'BALEARES',
   },
   {
     inputs: ['Barcelona'],
@@ -96,6 +96,15 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'ANDALUCIA',
   },
   {
+    inputs: [
+      'Martín de la Jara',
+      'Sevilla (Martín de la Jara)',
+      'Martín de la Jara (Sevilla)',
+    ],
+    name: 'Martín de la Jara (Sevilla)',
+    community: 'ANDALUCIA',
+  },
+  {
     inputs: ['Valencia (Massanassa)', 'Massanassa (Valencia)', 'Massanassa'],
     name: 'Massanassa (Valencia)',
     community: 'VALENCIA',
@@ -145,16 +154,6 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'ANDALUCIA',
   },
   {
-    inputs: ['Martín de la Jara', 'Sevilla (Martín de la Jara)', 'Martín de la Jara (Sevilla)'],
-    name: 'Martín de la Jara (Sevilla)',
-    community: 'ANDALUCIA',
-  },
-  {
-    inputs: ['Zaratán', 'Valladolid (Zaratán)', 'Zaratán (Valladolid)'],
-    name: 'Zaratán (Valladolid)',
-    community: 'CASTILLA_Y_LEON',
-  },
-  {
     inputs: ['Valencia'],
     name: 'Valencia',
     community: 'VALENCIA',
@@ -193,5 +192,10 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     inputs: ['Zaragoza'],
     name: 'Zaragoza',
     community: 'ARAGON',
+  },
+  {
+    inputs: ['Zaratán', 'Valladolid (Zaratán)', 'Zaratán (Valladolid)'],
+    name: 'Zaratán (Valladolid)',
+    community: 'CASTILLA_Y_LEON',
   },
 ];

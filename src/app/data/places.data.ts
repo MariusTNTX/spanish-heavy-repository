@@ -62,11 +62,6 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Albacete',
   },
   {
-    inputs: ['Estraperlo', 'Sala Estraperlo'],
-    name: 'Sala Estraperlo',
-    location: 'Badalona (Barcelona)',
-  },
-  {
     inputs: ['Foment Martinenc', 'Foment'],
     name: 'Foment Martinenc',
     location: 'Barcelona',
@@ -151,7 +146,7 @@ export const METAL_PLACES: MetalPlace[] = [
       'Palau Olimpic Badalona',
       'Palau Olimpic',
       'Olimpic Badalona',
-      'Olimpic Arena Badalona', 
+      'Olimpic Arena Badalona',
       'Olimpic Arena',
       'Olimpic',
     ],
@@ -224,6 +219,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Sevilla',
   },
   {
+    inputs: ['Estraperlo', 'Sala Estraperlo'],
+    name: 'Sala Estraperlo',
+    location: 'Badalona (Barcelona)',
+  },
+  {
     inputs: ['Fanatic', 'Sala Fanatic', 'Fanátic', 'Sala Fanátic'],
     name: 'Sala Fanatic',
     location: 'Sevilla',
@@ -294,7 +294,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Pontevedra',
   },
   {
-    inputs: ['Revi Live', 'ReviLive', 'Revi-Live', 'Sala Revi Live', 'Sala ReviLive', 'Sala Revi-Live'],
+    inputs: [
+      'Revi Live',
+      'ReviLive',
+      'Revi-Live',
+      'Sala Revi Live',
+      'Sala ReviLive',
+      'Sala Revi-Live',
+    ],
     name: 'Sala Revi Live',
     location: 'Madrid',
   },
@@ -302,6 +309,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Rock City', 'Sala Rock City'],
     name: 'Sala Rock City',
     location: 'Valencia',
+  },
+  {
+    inputs: ['Salamandra', 'Sala Salamandra'],
+    name: 'Sala Salamandra',
+    location: 'Barcelona',
   },
   {
     inputs: ['Santana 27', 'Sala Santana 27', 'Santana', 'Sala Santana'],
@@ -334,7 +346,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Barcelona',
   },
   {
-    inputs: ['Urban Rock Concept', 'Rock Concept', 'Urban Rock', 'Sala Urban Rock Concept', 'Sala Urban Rock', 'Sala Rock Concept'],
+    inputs: [
+      'Urban Rock Concept',
+      'Rock Concept',
+      'Urban Rock',
+      'Sala Urban Rock Concept',
+      'Sala Urban Rock',
+      'Sala Rock Concept',
+    ],
     name: 'Sala Urban Rock Concept',
     location: 'Vitoria',
   },
@@ -359,17 +378,17 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Valencia',
   },
   {
-    inputs: ['Salamandra', 'Sala Salamandra'],
-    name: 'Sala Salamandra',
-    location: 'Barcelona',
-  },
-  {
     inputs: ['Sant Jordi Club'],
     name: 'Sant Jordi Club',
     location: 'Barcelona',
   },
   {
-    inputs: ['Teatro Real de Madrid', 'Teatro Real (Madrid)', 'Madrid (Teatro Real)', 'Teatro Real'],
+    inputs: [
+      'Teatro Real de Madrid',
+      'Teatro Real (Madrid)',
+      'Madrid (Teatro Real)',
+      'Teatro Real',
+    ],
     name: 'Teatro Real de Madrid',
     location: 'Madrid',
   },

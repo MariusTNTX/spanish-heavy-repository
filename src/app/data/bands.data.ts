@@ -537,11 +537,6 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['In Flames'],
-    name: 'In Flames',
-    genres: [],
-  },
-  {
     inputs: ['Infected Rain'],
     name: 'Infected Rain',
     genres: [],

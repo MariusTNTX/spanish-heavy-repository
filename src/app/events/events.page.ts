@@ -13,12 +13,12 @@ import {
   IonList,
   IonModal,
   IonTitle,
-  IonToolbar
+  IonToolbar,
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { close, filter, search } from 'ionicons/icons';
-import { Subscription } from 'rxjs';
-import { FiltersComponent } from "../filters/filters.component";
+import { debounceTime, distinctUntilChanged, Subscription, tap } from 'rxjs';
+import { FiltersComponent } from '../filters/filters.component';
 import { MetalEvent } from '../models/db.model';
 import { EventService } from '../services/events/event.service';
 import { FlyerEventItemComponent } from './flyer-event-item/flyer-event-item.component';
@@ -28,7 +28,12 @@ import { ListEventItemComponent } from './list-event-item/list-event-item.compon
   selector: 'app-events',
   templateUrl: './events.page.html',
   styleUrls: ['./events.page.scss'],
-  imports: [IonInfiniteScroll, IonInfiniteScrollContent, IonList, IonTitle, IonModal,
+  imports: [
+    IonInfiniteScroll,
+    IonInfiniteScrollContent,
+    IonList,
+    IonTitle,
+    IonModal,
     IonHeader,
     IonToolbar,
     IonButtons,
@@ -37,9 +42,9 @@ import { ListEventItemComponent } from './list-event-item/list-event-item.compon
     IonInput,
     IonIcon,
     ListEventItemComponent,
-    FlyerEventItemComponent, 
+    FlyerEventItemComponent,
     FiltersComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 })
 export class FolderPage implements OnInit, OnDestroy {
@@ -54,9 +59,9 @@ export class FolderPage implements OnInit, OnDestroy {
   constructor() {
     addIcons({ filter, close, search });
   }
-  
+
   ngOnInit(): void {
-    this.querySub = this.queryControl.valueChanges.subscribe(query => 
+    this.querySub = this.queryControl.valueChanges.subscribe((query) =>
       this.eventService.applyQuery(query)
     );
   }

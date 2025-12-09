@@ -165,7 +165,7 @@ export const METAL_LOCATIONS: MetalLocation[] = [
   },
   {
     inputs: ['Villaverde', 'Villaverde (Madrid)', 'Madrid (Villaverde)'],
-    name: 'Villaverde',
+    name: 'Villaverde (Madrid)',
     community: 'MADRID',
   },
   {

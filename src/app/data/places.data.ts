@@ -79,7 +79,7 @@ export const METAL_PLACES: MetalPlace[] = [
   {
     inputs: ['Iberdrola Music'],
     name: 'Iberdrola Music',
-    location: 'Villaverde',
+    location: 'Villaverde (Madrid)',
   },
   {
     inputs: ['IFEZA'],

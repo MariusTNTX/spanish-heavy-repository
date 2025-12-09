@@ -1,3 +1,18 @@
 <ion-item>
-  <ion-label>{{ event.bands }}</ion-label>
+  <div slot="start">
+    <div class="date">
+      <div class="day">{{ day }}</div>
+      <div class="month">{{ month }}</div>
+      <div class="year">{{ year }}</div>
+    </div>
+  </div>
+  <ion-label>
+    <h2 class="title">{{ bands }}</h2>
+    <p class="subtitle">
+      <img class="flag" [src]="flag">
+      <span class="location">{{ event.location }}</span>
+      <span class="separator">></span>
+      <span class="place">{{ event.place }}</span>
+    </p>
+  </ion-label>
 </ion-item>

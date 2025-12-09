@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import {
   IonButton,
   IonButtons,
@@ -15,6 +15,8 @@ import { EventService } from '../services/events/event.service';
 import { FlyerEventItemComponent } from './flyer-event-item/flyer-event-item.component';
 import { ListEventItemComponent } from './list-event-item/list-event-item.component';
 import { FiltersComponent } from "../filters/filters.component";
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-events',
@@ -29,16 +31,31 @@ import { FiltersComponent } from "../filters/filters.component";
     IonInput,
     IonIcon,
     ListEventItemComponent,
-    FlyerEventItemComponent, FiltersComponent],
+    FlyerEventItemComponent, 
+    FiltersComponent,
+    ReactiveFormsModule
+  ],
 })
-export class FolderPage {
+export class FolderPage implements OnInit, OnDestroy {
   private eventService = inject(EventService);
+  private querySub!: Subscription;
 
+  public queryControl: FormControl = new FormControl<string>('');
   public showEvents: boolean = true;
   public showFilters: boolean = false;
 
   constructor() {
     addIcons({ filter, close, search });
+  }
+  
+  ngOnInit(): void {
+    this.querySub = this.queryControl.valueChanges.subscribe(query => 
+      this.eventService.applyQuery(query)
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.querySub.unsubscribe();
   }
 
   getEvents(): MetalEvent[] {

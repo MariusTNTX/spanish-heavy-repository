@@ -2486,7 +2486,7 @@ export const METAL_EVENTS: MetalEvent[] = [
       'Nick Cave and the Dad Seeds',
       'The Black Crowes',
     ],
-    location: 'Villaverde',
+    location: 'Villaverde (Madrid)',
     place: 'Iberdrola Music',
     description:
       'https://madcoolfestival.es/2023-app/public/uploads/poster/d003557fbbed6e7e.jpgn*Foo Fightersn*The Warningn*Twenty One Pilotsn*Pixiesn*A Perfect Circlen*Nick Cave and the Dad Seedsn*The Black Crowes',

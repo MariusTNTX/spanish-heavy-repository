@@ -2,31 +2,31 @@ import { MetalLocation } from '../models/db.model';
 
 export const locationFlag = {
   ANDALUCIA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Bandera_de_Andaluc%C3%ADa.svg/960px-Bandera_de_Andaluc%C3%ADa.svg.png?20080207004326',
+    'assets/svg/andalucia.svg',
   ARAGON:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bandera_de_Arag%C3%B3n.svg/960px-Bandera_de_Arag%C3%B3n.svg.png?20091024194526',
+    'assets/svg/aragon.svg',
   ASTURIAS:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Asturias.svg/800px-Flag_of_Asturias.svg.png?20140621172218',
+    'assets/svg/asturias.svg',
   BALEARES:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Flag_of_the_Balearic_Islands.svg/960px-Flag_of_the_Balearic_Islands.svg.png?20140621160451',
-  BARCELONA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/1024px-Flag_of_Catalonia.svg.png',
+    'assets/svg/baleares.svg',
+  CATALUNIA:
+    'assets/svg/catalunia.svg',
   CASTILLA_LA_MANCHA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Castile-La_Mancha.svg/750px-Flag_of_Castile-La_Mancha.svg.png?20090903092614',
+    'assets/svg/castilla_la_mancha.svg',
   CASTILLA_Y_LEON:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Bandera_de_Castilla_y_Le%C3%B3n_%28her%C3%A1ldica%29.svg/600px-Bandera_de_Castilla_y_Le%C3%B3n_%28her%C3%A1ldica%29.svg.png?20090526180522',
+    'assets/svg/castilla_y_leon.svg',
   GALICIA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Galicia.svg/600px-Flag_of_Galicia.svg.png?20060226234755',
+    'assets/svg/galicia.svg',
   MADRID:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_the_Community_of_Madrid.svg/960px-Flag_of_the_Community_of_Madrid.svg.png?20210801050711',
+    'assets/svg/madrid.svg',
   MURCIA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_Region_of_Murcia.svg/750px-Flag_of_the_Region_of_Murcia.svg.png?20140621170437',
+    'assets/svg/murcia.svg',
   NAVARRA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Bandera_Navarra.svg/800px-Bandera_Navarra.svg.png?20090626121153',
+    'assets/svg/navarra.svg',
   PAIS_VASCO:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Flag_of_the_Basque_Country.svg/960px-Flag_of_the_Basque_Country.svg.png?20150905102146',
+    'assets/svg/pais_vasco.svg',
   VALENCIA:
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Flag_of_the_Valencian_Community_%282x3%29.svg/512px-Flag_of_the_Valencian_Community_%282x3%29.svg.png?20170405094718',
+    'assets/svg/valencia.svg',
 };
 
 export const METAL_LOCATIONS: MetalLocation[] = [
@@ -38,7 +38,7 @@ export const METAL_LOCATIONS: MetalLocation[] = [
   {
     inputs: ['Badalona', 'Barcelona (Badalona)', 'Badalona (Barcelona)'],
     name: 'Badalona (Barcelona)',
-    community: 'BARCELONA',
+    community: 'CATALUNIA',
   },
   {
     inputs: ['Baleares'],
@@ -48,7 +48,7 @@ export const METAL_LOCATIONS: MetalLocation[] = [
   {
     inputs: ['Barcelona'],
     name: 'Barcelona',
-    community: 'BARCELONA',
+    community: 'CATALUNIA',
   },
   {
     inputs: ['Bilbao'],

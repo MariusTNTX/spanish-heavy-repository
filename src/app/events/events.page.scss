@@ -30,3 +30,19 @@ ion-menu-button {
 .search-input {
   padding: 0 6px;
 }
+
+.filters-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  background-color: #c5000f;
+  color: #f4f5f8;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  right: -0.5rem;
+  top: -0.2rem;
+  font-size: 10px;
+}

@@ -3,6 +3,9 @@
     <ion-buttons slot="start">
       <ion-button (click)="showFilters = true">
         <ion-icon slot="icon-only" name="filter"></ion-icon>
+        @if(filtersApplied()){
+          <div class="filters-badge">{{ filtersApplied() }}</div>
+        }
       </ion-button>
     </ion-buttons>
     <div class="search-input">
@@ -37,9 +40,23 @@
     </ng-template>
   </ion-modal>
 
-  @for(event of getEvents(); track event){ @if(showEvents){
-  <app-list-event-item [event]="event"></app-list-event-item>
+  @if(showEvents){
+    <ion-list>
+      @for(event of getEvents(); track event){
+        <app-list-event-item [event]="event"></app-list-event-item>
+      }
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="onIonInfiniteList($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   } @else {
-  <app-flyer-event-item [event]="event"></app-flyer-event-item>
-  } }
+    <ion-list>
+      @for(event of getEvents(); track event){
+        <app-flyer-event-item [event]="event"></app-flyer-event-item>
+      }
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="onIonInfiniteFlyer($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  } 
 </ion-content>

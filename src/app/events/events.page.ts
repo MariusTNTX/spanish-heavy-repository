@@ -1,28 +1,34 @@
-import { Component, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit, Signal } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import {
+  InfiniteScrollCustomEvent,
   IonButton,
   IonButtons,
   IonContent,
   IonHeader,
   IonIcon,
+  IonInfiniteScroll,
+  IonInfiniteScrollContent,
   IonInput,
-  IonMenuButton,
-  IonToolbar, IonModal, IonTitle } from '@ionic/angular/standalone';
+  IonList,
+  IonModal,
+  IonTitle,
+  IonToolbar
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { close, filter, search } from 'ionicons/icons';
+import { Subscription } from 'rxjs';
+import { FiltersComponent } from "../filters/filters.component";
 import { MetalEvent } from '../models/db.model';
 import { EventService } from '../services/events/event.service';
 import { FlyerEventItemComponent } from './flyer-event-item/flyer-event-item.component';
 import { ListEventItemComponent } from './list-event-item/list-event-item.component';
-import { FiltersComponent } from "../filters/filters.component";
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-events',
   templateUrl: './events.page.html',
   styleUrls: ['./events.page.scss'],
-  imports: [IonTitle, IonModal,
+  imports: [IonInfiniteScroll, IonInfiniteScrollContent, IonList, IonTitle, IonModal,
     IonHeader,
     IonToolbar,
     IonButtons,
@@ -43,6 +49,7 @@ export class FolderPage implements OnInit, OnDestroy {
   public queryControl: FormControl = new FormControl<string>('');
   public showEvents: boolean = true;
   public showFilters: boolean = false;
+  public filtersApplied: Signal<number> = this.eventService.filtersApplied;
 
   constructor() {
     addIcons({ filter, close, search });
@@ -60,5 +67,15 @@ export class FolderPage implements OnInit, OnDestroy {
 
   getEvents(): MetalEvent[] {
     return this.eventService.filteredMetalEvents();
+  }
+
+  onIonInfiniteList(event: InfiniteScrollCustomEvent) {
+    this.eventService.nextPage();
+    event.target.complete();
+  }
+
+  onIonInfiniteFlyer(event: InfiniteScrollCustomEvent) {
+    this.eventService.nextPage();
+    event.target.complete();
   }
 }

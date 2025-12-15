@@ -2,6 +2,11 @@ import { MetalBand } from '../models/db.model';
 
 export const METAL_BANDS: MetalBand[] = [
   {
+    inputs: ['1349'],
+    name: '1349',
+    genres: [],
+  },
+  {
     inputs: ['156/Silence'],
     name: '156/Silence',
     genres: [],
@@ -22,6 +27,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Acheron'],
+    name: 'Acheron',
+    genres: [],
+  },
+  {
     inputs: ['Acres'],
     name: 'Acres',
     genres: [],
@@ -29,6 +39,26 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Aesthetic Perfection'],
     name: 'Aesthetic Perfection',
+    genres: [],
+  },
+  {
+    inputs: ['Aeternus'],
+    name: 'Aeternus',
+    genres: [],
+  },
+  {
+    inputs: ['After Lapse'],
+    name: 'After Lapse',
+    genres: [],
+  },
+  {
+    inputs: ['Against Myself'],
+    name: 'Against Myself',
+    genres: [],
+  },
+  {
+    inputs: ['Agent Fresco'],
+    name: 'Agent Fresco',
     genres: [],
   },
   {
@@ -62,8 +92,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Amh'],
+    name: 'Amh',
+    genres: [],
+  },
+  {
     inputs: ['Amon Amarth'],
     name: 'Amon Amarth',
+    genres: [],
+  },
+  {
+    inputs: ['Aneuma'],
+    name: 'Aneuma',
     genres: [],
   },
   {
@@ -72,8 +112,23 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Ankhara'],
+    name: 'Ankhara',
+    genres: [],
+  },
+  {
     inputs: ['Anthrax'],
     name: 'Anthrax',
+    genres: [],
+  },
+  {
+    inputs: ['Arch Enemy'],
+    name: 'Arch Enemy',
+    genres: [],
+  },
+  {
+    inputs: ['Arion'],
+    name: 'Arion',
     genres: [],
   },
   {
@@ -112,13 +167,23 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Barón Rojo'],
+    inputs: ['Bad Religion'],
+    name: 'Bad Religion',
+    genres: [],
+  },
+  {
+    inputs: ['Barón Rojo', 'Baron Rojo'],
     name: 'Barón Rojo',
     genres: [],
   },
   {
     inputs: ['Beast in Black'],
     name: 'Beast in Black',
+    genres: [],
+  },
+  {
+    inputs: ['Bewitched'],
+    name: 'Bewitched',
     genres: [],
   },
   {
@@ -129,6 +194,16 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Black Spikes'],
     name: 'Black Spikes',
+    genres: [],
+  },
+  {
+    inputs: ['Blaze Out'],
+    name: 'Blaze Out',
+    genres: [],
+  },
+  {
+    inputs: ['Bleed From Within', 'Bleed from Within'],
+    name: 'Bleed from Within',
     genres: [],
   },
   {
@@ -152,13 +227,28 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Bolu2 Death'],
+    name: 'Bolu2 Death',
+    genres: [],
+  },
+  {
+    inputs: ['Bølzer', 'Bolzer'],
+    name: 'Bølzer',
+    genres: [],
+  },
+  {
     inputs: ['Brainstorm'],
     name: 'Brainstorm',
     genres: [],
   },
   {
-    inputs: ['Brothers Of Metal'],
-    name: 'Brothers Of Metal',
+    inputs: ['Breaking Benjamin'],
+    name: 'Breaking Benjamin',
+    genres: [],
+  },
+  {
+    inputs: ['Brothers Of Metal', 'Brothers of Metal'],
+    name: 'Brothers of Metal',
     genres: [],
   },
   {
@@ -202,6 +292,16 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Celtibeerian'],
+    name: 'Celtibeerian',
+    genres: [],
+  },
+  {
+    inputs: ['Chained Saint'],
+    name: 'Chained Saint',
+    genres: [],
+  },
+  {
     inputs: ['Chelsea Grin'],
     name: 'Chelsea Grin',
     genres: [],
@@ -209,6 +309,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Chez Kane'],
     name: 'Chez Kane',
+    genres: [],
+  },
+  {
+    inputs: ['Chino Banzai'],
+    name: 'Chino Banzai',
     genres: [],
   },
   {
@@ -222,6 +327,16 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Coroner'],
+    name: 'Coroner',
+    genres: [],
+  },
+  {
+    inputs: ['Corpse Pile'],
+    name: 'Corpse Pile',
+    genres: [],
+  },
+  {
     inputs: ['Corrosion of Conformity'],
     name: 'Corrosion of Conformity',
     genres: [],
@@ -232,13 +347,33 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Crematory'],
+    name: 'Crematory',
+    genres: [],
+  },
+  {
     inputs: ['Crimson Glory'],
     name: 'Crimson Glory',
     genres: [],
   },
   {
+    inputs: ['Cryptopsy'],
+    name: 'Cryptopsy',
+    genres: [],
+  },
+  {
+    inputs: ['Crystal Lake'],
+    name: 'Crystal Lake',
+    genres: [],
+  },
+  {
     inputs: ['D-A-D'],
     name: 'D-A-D',
+    genres: [],
+  },
+  {
+    inputs: ['Daeria'],
+    name: 'Daeria',
     genres: [],
   },
   {
@@ -252,6 +387,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Dartagnan'],
+    name: 'Dartagnan',
+    genres: [],
+  },
+  {
     inputs: ['Daughtry'],
     name: 'Daughtry',
     genres: [],
@@ -262,8 +402,43 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Death And Legacy', 'Death and Legacy', 'Death & Legacy'],
+    name: 'Death and Legacy',
+    genres: [],
+  },
+  {
+    inputs: ['Death Bats', 'Death Bats (Tributo Avenged Sevenfold)'],
+    name: 'Death Bats (Tributo Avenged Sevenfold)',
+    genres: [],
+  },
+  {
+    inputs: ['Deathhammer'],
+    name: 'Deathhammer',
+    genres: [],
+  },
+  {
+    inputs: ['Deep Purple'],
+    name: 'Deep Purple',
+    genres: [],
+  },
+  {
     inputs: ['Deicide'],
     name: 'Deicide',
+    genres: [],
+  },
+  {
+    inputs: ['Delalma'],
+    name: 'Delalma',
+    genres: [],
+  },
+  {
+    inputs: ['Destruction'],
+    name: 'Destruction',
+    genres: [],
+  },
+  {
+    inputs: ['Diesect'],
+    name: 'Diesect',
     genres: [],
   },
   {
@@ -297,8 +472,23 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Dragony'],
+    name: 'Dragony',
+    genres: [],
+  },
+  {
+    inputs: ['Dünedain', 'Dunedain'],
+    name: 'Dünedain',
+    genres: [],
+  },
+  {
     inputs: ['Eihwar'],
     name: 'Eihwar',
+    genres: [],
+  },
+  {
+    inputs: ['Einar Solberg'],
+    name: 'Einar Solberg',
     genres: [],
   },
   {
@@ -307,12 +497,27 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Ekyrian'],
+    name: 'Ekyrian',
+    genres: [],
+  },
+  {
+    inputs: ['El Altar del Holocausto', 'Altar del Holocausto'],
+    name: 'El Altar del Holocausto',
+    genres: [],
+  },
+  {
     inputs: ['Electric Callboy'],
     name: 'Electric Callboy',
     genres: [],
   },
   {
-    inputs: ['Employed to Serve'],
+    inputs: ['Emperor'],
+    name: 'Emperor',
+    genres: [],
+  },
+  {
+    inputs: ['Employed to Serve', 'Employed To Serve'],
     name: 'Employed to Serve',
     genres: [],
   },
@@ -352,6 +557,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Evaristo'],
+    name: 'Evaristo',
+    genres: [],
+  },
+  {
     inputs: ['Evergrey'],
     name: 'Evergrey',
     genres: [],
@@ -362,8 +572,23 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Evo'],
+    name: 'Evo',
+    genres: [],
+  },
+  {
+    inputs: ['Exodia'],
+    name: 'Exodia',
+    genres: [],
+  },
+  {
     inputs: ['Exodus'],
     name: 'Exodus',
+    genres: [],
+  },
+  {
+    inputs: ['Fallen At Dawn', 'Fallen at Dawn'],
+    name: 'Fallen at Dawn',
     genres: [],
   },
   {
@@ -377,13 +602,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Fit For A King'],
-    name: 'Fit For A King',
+    inputs: ['Fit For A King', 'Fit for a King'],
+    name: 'Fit for a King',
     genres: [],
   },
   {
     inputs: ['Fito y Fitipaldis'],
     name: 'Fito y Fitipaldis',
+    genres: [],
+  },
+  {
+    inputs: ['FM'],
+    name: 'FM',
     genres: [],
   },
   {
@@ -397,8 +627,8 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Full Of Hell'],
-    name: 'Full Of Hell',
+    inputs: ['Full Of Hell', 'Full of Hell'],
+    name: 'Full of Hell',
     genres: [],
   },
   {
@@ -407,8 +637,8 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Get The Shot'],
-    name: 'Get The Shot',
+    inputs: ['Get The Shot', 'Get the Shot'],
+    name: 'Get the Shot',
     genres: [],
   },
   {
@@ -417,8 +647,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Gloryhammer'],
+    name: 'Gloryhammer',
+    genres: [],
+  },
+  {
     inputs: ['Godsmack'],
     name: 'Godsmack',
+    genres: [],
+  },
+  {
+    inputs: ['Gotthard'],
+    name: 'Gotthard',
     genres: [],
   },
   {
@@ -427,8 +667,28 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['H.E.A.T'],
+    inputs: ['Great American Ghost'],
+    name: 'Great American Ghost',
+    genres: [],
+  },
+  {
+    inputs: ['Green Carnation'],
+    name: 'Green Carnation',
+    genres: [],
+  },
+  {
+    inputs: ['Guilt Trip'],
+    name: 'Guilt Trip',
+    genres: [],
+  },
+  {
+    inputs: ['H.E.A.T', 'HEAT'],
     name: 'H.E.A.T',
+    genres: [],
+  },
+  {
+    inputs: ['Hadadanza'],
+    name: 'Hadadanza',
     genres: [],
   },
   {
@@ -442,7 +702,7 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Halloween (Tributo Helloween)'],
+    inputs: ['Halloween', 'Halloween (Tributo Helloween)'],
     name: 'Halloween (Tributo Helloween)',
     genres: [],
   },
@@ -487,6 +747,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Headon'],
+    name: 'Headon',
+    genres: [],
+  },
+  {
     inputs: ['Heaven Shall Burn'],
     name: 'Heaven Shall Burn',
     genres: [],
@@ -502,6 +767,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Hellbutcher'],
+    name: 'Hellbutcher',
+    genres: [],
+  },
+  {
     inputs: ['Helloween'],
     name: 'Helloween',
     genres: [],
@@ -512,13 +782,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Hiraes'],
+    name: 'Hiraes',
+    genres: [],
+  },
+  {
     inputs: ['Hitten'],
     name: 'Hitten',
     genres: [],
   },
   {
-    inputs: ['House Of Protection'],
-    name: 'House Of Protection',
+    inputs: ['House Of Protection', 'House of Protection'],
+    name: 'House of Protection',
     genres: [],
   },
   {
@@ -532,13 +807,48 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Impaled Nazarene'],
+    name: 'Impaled Nazarene',
+    genres: [],
+  },
+  {
+    inputs: ['Impiety'],
+    name: 'Impiety',
+    genres: [],
+  },
+  {
     inputs: ['In Flames'],
     name: 'In Flames',
     genres: [],
   },
   {
+    inputs: ['In The Woods...', 'In the Woods...'],
+    name: 'In the Woods...',
+    genres: [],
+  },
+  {
     inputs: ['Infected Rain'],
     name: 'Infected Rain',
+    genres: [],
+  },
+  {
+    inputs: ['Inferi'],
+    name: 'Inferi',
+    genres: [],
+  },
+  {
+    inputs: ['Injector'],
+    name: 'Injector',
+    genres: [],
+  },
+  {
+    inputs: ['Invicti'],
+    name: 'Invicti',
+    genres: [],
+  },
+  {
+    inputs: ['Iotunn'],
+    name: 'Iotunn',
     genres: [],
   },
   {
@@ -562,6 +872,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Jayler'],
+    name: 'Jayler',
+    genres: [],
+  },
+  {
     inputs: ['Jinjer'],
     name: 'Jinjer',
     genres: [],
@@ -569,6 +884,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Judas Priest'],
     name: 'Judas Priest',
+    genres: [],
+  },
+  {
+    inputs: ['Kampfar'],
+    name: 'Kampfar',
     genres: [],
   },
   {
@@ -584,6 +904,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Kiko Loureiro'],
     name: 'Kiko Loureiro',
+    genres: [],
+  },
+  {
+    inputs: ['Killus'],
+    name: 'Killus',
     genres: [],
   },
   {
@@ -617,8 +942,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Krisiun'],
+    name: 'Krisiun',
+    genres: [],
+  },
+  {
     inputs: ['Lacuna Coil'],
     name: 'Lacuna Coil',
+    genres: [],
+  },
+  {
+    inputs: ['Lándevir', 'Landevir'],
+    name: 'Lándevir',
     genres: [],
   },
   {
@@ -634,6 +969,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Legion of the Damned'],
     name: 'Legion of the Damned',
+    genres: [],
+  },
+  {
+    inputs: ['Lepoka', 'Lépoka'],
+    name: 'Lepoka',
     genres: [],
   },
   {
@@ -672,6 +1012,16 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Los Barones', 'Los Barones (Tributo Barón Rojo)'],
+    name: 'Los Barones (Tributo Barón Rojo)',
+    genres: [],
+  },
+  {
+    inputs: ['Loudness', 'LOUDNESS'],
+    name: 'Loudness',
+    genres: [],
+  },
+  {
     inputs: ['Ludovico'],
     name: 'Ludovico',
     genres: [],
@@ -682,18 +1032,28 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Mägo de Öz'],
+    inputs: ['Mägo de Öz', 'Mago de Oz'],
     name: 'Mägo de Öz',
     genres: [],
   },
   {
-    inputs: ['Make Them Suffer'],
-    name: 'Make Them Suffer',
+    inputs: ['Majestica'],
+    name: 'Majestica',
     genres: [],
   },
   {
-    inputs: ['Man With A Mission'],
-    name: 'Man With A Mission',
+    inputs: ['Make Them Suffer', 'Make them Suffer'],
+    name: 'Make them Suffer',
+    genres: [],
+  },
+  {
+    inputs: ['Malevolence'],
+    name: 'Malevolence',
+    genres: [],
+  },
+  {
+    inputs: ['Man With A Mission', 'Man with a Mission'],
+    name: 'Man with a Mission',
     genres: [],
   },
   {
@@ -709,6 +1069,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Marko Hietala'],
     name: 'Marko Hietala',
+    genres: [],
+  },
+  {
+    inputs: ['Massacra Legacy'],
+    name: 'Massacra Legacy',
     genres: [],
   },
   {
@@ -732,6 +1097,26 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Mind Driller'],
+    name: 'Mind Driller',
+    genres: [],
+  },
+  {
+    inputs: ['Miss May I'],
+    name: 'Miss May I',
+    genres: [],
+  },
+  {
+    inputs: ['Mogwai'],
+    name: 'Mogwai',
+    genres: [],
+  },
+  {
+    inputs: ['Mork'],
+    name: 'Mork',
+    genres: [],
+  },
+  {
     inputs: ['Morphium'],
     name: 'Morphium',
     genres: [],
@@ -739,6 +1124,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Motionless in White'],
     name: 'Motionless in White',
+    genres: [],
+  },
+  {
+    inputs: ['Motörhits', 'Motörhits (Tributo Motörhead)'],
+    name: 'Motörhits (Tributo Motörhead)',
     genres: [],
   },
   {
@@ -757,8 +1147,8 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Nanowar Of Steel'],
-    name: 'Nanowar Of Steel',
+    inputs: ['Nanowar Of Steel', 'Nanowar of Steel'],
+    name: 'Nanowar of Steel',
     genres: [],
   },
   {
@@ -767,8 +1157,33 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Nargaroth'],
+    name: 'Nargaroth',
+    genres: [],
+  },
+  {
+    inputs: ['Nasty'],
+    name: 'Nasty',
+    genres: [],
+  },
+  {
+    inputs: ['Negative Plane'],
+    name: 'Negative Plane',
+    genres: [],
+  },
+  {
     inputs: ['Nick Cave and the Dad Seeds'],
     name: 'Nick Cave and the Dad Seeds',
+    genres: [],
+  },
+  {
+    inputs: ['Nidhøgg', 'Nidhogg'],
+    name: 'Nidhøgg',
+    genres: [],
+  },
+  {
+    inputs: ['No Relief'],
+    name: 'No Relief',
     genres: [],
   },
   {
@@ -777,12 +1192,17 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Nocturnal'],
+    name: 'Nocturnal',
+    genres: [],
+  },
+  {
     inputs: ['Northlane'],
     name: 'Northlane',
     genres: [],
   },
   {
-    inputs: ['Nothing More'],
+    inputs: ['Nothing More', 'NothingMore'],
     name: 'Nothing More',
     genres: [],
   },
@@ -792,12 +1212,17 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Obús'],
+    inputs: ['Nurcry'],
+    name: 'Nurcry',
+    genres: [],
+  },
+  {
+    inputs: ['Obús', 'Obus'],
     name: 'Obús',
     genres: [],
   },
   {
-    inputs: ['Of Mice & Men'],
+    inputs: ['Of Mice & Men', 'Of Mice And Men', 'Of Mice and Men'],
     name: 'Of Mice & Men',
     genres: [],
   },
@@ -812,8 +1237,18 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Opeth'],
+    name: 'Opeth',
+    genres: [],
+  },
+  {
     inputs: ['Orbit Culture'],
     name: 'Orbit Culture',
+    genres: [],
+  },
+  {
+    inputs: ['Orden Ogan'],
+    name: 'Orden Ogan',
     genres: [],
   },
   {
@@ -862,12 +1297,22 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Primal Fear'],
+    name: 'Primal Fear',
+    genres: [],
+  },
+  {
     inputs: ['Primordial'],
     name: 'Primordial',
     genres: [],
   },
   {
-    inputs: ['Queensrÿche'],
+    inputs: ['Prom Kinks'],
+    name: 'Prom Kinks',
+    genres: [],
+  },
+  {
+    inputs: ['Queensrÿche', 'Queensryche'],
     name: 'Queensrÿche',
     genres: [],
   },
@@ -892,12 +1337,22 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Rendezvous Point'],
+    name: 'Rendezvous Point',
+    genres: [],
+  },
+  {
     inputs: ['Revocation'],
     name: 'Revocation',
     genres: [],
   },
   {
-    inputs: ["Rockin' Ladies Band"],
+    inputs: ['Rienda Suelta'],
+    name: 'Rienda Suelta',
+    genres: [],
+  },
+  {
+    inputs: ["Rockin' Ladies Band", 'Rockin Ladies Band'],
     name: "Rockin' Ladies Band",
     genres: [],
   },
@@ -917,6 +1372,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Sabbath'],
+    name: 'Sabbath',
+    genres: [],
+  },
+  {
     inputs: ['Sacra'],
     name: 'Sacra',
     genres: [],
@@ -927,7 +1387,7 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['SAOR'],
+    inputs: ['SAOR', 'Saor'],
     name: 'SAOR',
     genres: [],
   },
@@ -962,6 +1422,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Serapis Project'],
+    name: 'Serapis Project',
+    genres: [],
+  },
+  {
     inputs: ['Serious Black'],
     name: 'Serious Black',
     genres: [],
@@ -977,13 +1442,23 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Signs Of The Swarm', 'Signs of the Swarm'],
+    name: 'Signs of the Swarm',
+    genres: [],
+  },
+  {
     inputs: ['Skillet'],
     name: 'Skillet',
     genres: [],
   },
   {
-    inputs: ['Slaughter To Prevail'],
-    name: 'Slaughter To Prevail',
+    inputs: ['Slaughter To Prevail', 'Slaughter to Prevail'],
+    name: 'Slaughter to Prevail',
+    genres: [],
+  },
+  {
+    inputs: ['Soen', 'SOEN'],
+    name: 'Soen',
     genres: [],
   },
   {
@@ -997,18 +1472,38 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Soziedad Alcoholika'],
-    name: 'Soziedad Alcoholika',
+    inputs: ['Sorcerer'],
+    name: 'Sorcerer',
     genres: [],
   },
   {
-    inputs: ['Soziedad Alkoholika'],
+    inputs: ['Soziedad Alcoholika', 'Soziedad Alkoholika'],
     name: 'Soziedad Alkoholika',
     genres: [],
   },
   {
-    inputs: ['Stingers (Tributo Scorpions)'],
+    inputs: ['Stab Wounds'],
+    name: 'Stab Wounds',
+    genres: [],
+  },
+  {
+    inputs: ['Steel Panther'],
+    name: 'Steel Panther',
+    genres: [],
+  },
+  {
+    inputs: ['Stingers', 'Stingers (Tributo Scorpions)'],
     name: 'Stingers (Tributo Scorpions)',
+    genres: [],
+  },
+  {
+    inputs: ['Stratovarius'],
+    name: 'Stratovarius',
+    genres: [],
+  },
+  {
+    inputs: ['Su Ta Gar'],
+    name: 'Su Ta Gar',
     genres: [],
   },
   {
@@ -1019,6 +1514,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Sylosis'],
     name: 'Sylosis',
+    genres: [],
+  },
+  {
+    inputs: ['Taake'],
+    name: 'Taake',
     genres: [],
   },
   {
@@ -1037,12 +1537,12 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['ten56.'],
+    inputs: ['ten56.', 'ten56'],
     name: 'ten56.',
     genres: [],
   },
   {
-    inputs: ['TesseracT'],
+    inputs: ['TesseracT', 'Tesseract'],
     name: 'TesseracT',
     genres: [],
   },
@@ -1097,13 +1597,33 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['The Night Prowlers (Tributo AC/DC)'],
+    inputs: ['The Night Prowlers', 'The Night Prowlers (Tributo AC/DC)'],
     name: 'The Night Prowlers (Tributo AC/DC)',
+    genres: [],
+  },
+  {
+    inputs: ['The Ocean'],
+    name: 'The Ocean',
+    genres: [],
+  },
+  {
+    inputs: ['The Offspring'],
+    name: 'The Offspring',
     genres: [],
   },
   {
     inputs: ['The Rasmus'],
     name: 'The Rasmus',
+    genres: [],
+  },
+  {
+    inputs: ['The Ruins Of Beverast', 'The Ruins of Beverast'],
+    name: 'The Ruins of Beverast',
+    genres: [],
+  },
+  {
+    inputs: ['The Sword'],
+    name: 'The Sword',
     genres: [],
   },
   {
@@ -1127,6 +1647,11 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Thunder Mother', 'Thundermother'],
+    name: 'Thunder Mother',
+    genres: [],
+  },
+  {
     inputs: ['Tortured Demon'],
     name: 'Tortured Demon',
     genres: [],
@@ -1134,6 +1659,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Transilvania'],
     name: 'Transilvania',
+    genres: [],
+  },
+  {
+    inputs: ['Trepaneringsritualen'],
+    name: 'Trepaneringsritualen',
     genres: [],
   },
   {
@@ -1167,6 +1697,16 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
+    inputs: ['Tygers of Pan Tang'],
+    name: 'Tygers of Pan Tang',
+    genres: [],
+  },
+  {
+    inputs: ['Tyketto'],
+    name: 'Tyketto',
+    genres: [],
+  },
+  {
     inputs: ['Uada'],
     name: 'Uada',
     genres: [],
@@ -1174,6 +1714,11 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Undead'],
     name: 'Undead',
+    genres: [],
+  },
+  {
+    inputs: ['Unleashed'],
+    name: 'Unleashed',
     genres: [],
   },
   {
@@ -1192,7 +1737,7 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ['Valentine (Tributo Queen)'],
+    inputs: ['Valentine', 'Valentine (Tributo Queen)'],
     name: 'Valentine (Tributo Queen)',
     genres: [],
   },
@@ -1204,6 +1749,16 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Vaughan'],
     name: 'Vaughan',
+    genres: [],
+  },
+  {
+    inputs: ['Vinterland'],
+    name: 'Vinterland',
+    genres: [],
+  },
+  {
+    inputs: ['Vitriol'],
+    name: 'Vitriol',
     genres: [],
   },
   {
@@ -1249,6 +1804,16 @@ export const METAL_BANDS: MetalBand[] = [
   {
     inputs: ['Xeria'],
     name: 'Xeria',
+    genres: [],
+  },
+  {
+    inputs: ['Zemial'],
+    name: 'Zemial',
+    genres: [],
+  },
+  {
+    inputs: ['Zenith', 'Zenith (Tributo Ghost)'],
+    name: 'Zenith (Tributo Ghost)',
     genres: [],
   },
 ];

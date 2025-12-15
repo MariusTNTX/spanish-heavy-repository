@@ -17,6 +17,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Burgos',
   },
   {
+    inputs: ['Atlantic Events'],
+    name: 'Atlantic Events',
+    location: 'Barcelona',
+  },
+  {
     inputs: ['Auditorio Miguel Ríos', 'Miguel Ríos'],
     name: 'Auditorio Miguel Ríos',
     location: 'Madrid',
@@ -25,6 +30,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Bilbao Arena'],
     name: 'Bilbao Arena',
     location: 'Bilbao',
+  },
+  {
+    inputs: ['Bohemian Club'],
+    name: 'Bohemian Club',
+    location: 'Pamplona',
   },
   {
     inputs: ['Capitol'],
@@ -52,6 +62,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Bilbao',
   },
   {
+    inputs: ['El Sol'],
+    name: 'Sala El Sol',
+    location: 'Madrid',
+  },
+  {
     inputs: ['Es Gremi Centre Musical', 'Es Gremi'],
     name: 'Es Gremi Centre Musical',
     location: 'Baleares',
@@ -62,12 +77,17 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Albacete',
   },
   {
+    inputs: ['Fabrica de Chocolate'],
+    name: 'Fabrica de Chocolate',
+    location: 'Vigo (Pontevedra)',
+  },
+  {
     inputs: ['Foment Martinenc', 'Foment'],
     name: 'Foment Martinenc',
     location: 'Barcelona',
   },
   {
-    inputs: ['Garage Beat Club', 'Garage Beat', 'Garage'],
+    inputs: ['Garage Beat Club', 'Garage Beat', 'Garage', 'Garaje Beat Club', 'Garaje Beat', 'Garaje'],
     name: 'Garage Beat Club',
     location: 'Murcia',
   },
@@ -75,6 +95,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Gijón Arena'],
     name: 'Gijón Arena',
     location: 'Gijón',
+  },
+  {
+    inputs: ['Hangar 48', 'Habgar 48'],
+    name: 'Hangar 48',
+    location: 'Madrid',
   },
   {
     inputs: ['Iberdrola Music'],
@@ -92,14 +117,29 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Valencia',
   },
   {
+    inputs: ['Jimmy Jazz'],
+    name: 'Jimmy Jazz',
+    location: 'Vitoria-Gasteiz',
+  },
+  {
     inputs: ['La Carpa (Poble Espanyol)', 'La Carpa', 'Poble Espanyol'],
     name: 'La Carpa (Poble Espanyol)',
     location: 'Barcelona',
   },
   {
+    inputs: ['La Casa del Loco'],
+    name: 'La Casa del Loco',
+    location: 'Zaragoza',
+  },
+  {
     inputs: ['La Nau'],
     name: 'La Nau',
     location: 'Barcelona',
+  },
+  {
+    inputs: ['La Trinchera'],
+    name: 'Sala La Trinchera',
+    location: 'Málaga',
   },
   {
     inputs: ["Lennon's Club", "Lennon's"],
@@ -110,6 +150,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Marenostrum Fuengirola'],
     name: 'Marenostrum Fuengirola',
     location: 'Fuengirola (Málaga)',
+  },
+  {
+    inputs: ['Meteoro'],
+    name: 'Sala Meteoro',
+    location: 'Barcelona',
   },
   {
     inputs: ['Monte do Gozo'],
@@ -125,6 +170,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Music Station'],
     name: 'Music Station',
     location: 'Madrid',
+  },
+  {
+    inputs: ['Nau B1'],
+    name: 'Sala Nau B1',
+    location: 'Granollers (Barcelona)',
   },
   {
     inputs: ['Navarra Arena'],
@@ -164,6 +214,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Barcelona',
   },
   {
+    inputs: ['Parc del Fòrum', 'Parc del Forum'],
+    name: 'Parc del Fòrum',
+    location: 'Barcelona',
+  },
+  {
     inputs: ['Parque el Batel'],
     name: 'Parque el Batel',
     location: 'Cartagena (Murcia)',
@@ -172,6 +227,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Parque San Agustín'],
     name: 'Parque San Agustín',
     location: 'Burgos',
+  },
+  {
+    inputs: ['Playa Club'],
+    name: 'Playa Club',
+    location: 'A Coruña',
   },
   {
     inputs: ['Plaza de España'],
@@ -194,6 +254,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Vitoria-Gasteiz',
   },
   {
+    inputs: ['Recinto Ferial El Abrazo', 'El Abrazo'],
+    name: 'Recinto Ferial El Abrazo',
+    location: 'La Rinconada (Sevilla)',
+  },
+  {
     inputs: ['Recinto Salón Municipal', 'Recinto Salón Municipal de La Gineta'],
     name: 'Recinto Salón Municipal de La Gineta',
     location: 'La Gineta (Albacete)',
@@ -209,7 +274,7 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Madrid',
   },
   {
-    inputs: ['Copérnico', 'Sala Copérnico'],
+    inputs: ['Copérnico', 'Sala Copérnico', 'Copernico', 'Sala Copernico'],
     name: 'Sala Copérnico',
     location: 'Madrid',
   },
@@ -326,6 +391,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Madrid',
   },
   {
+    inputs: ['Supra', 'Sala Supra'],
+    name: 'Sala Supra',
+    location: 'Sevilla',
+  },
+  {
     inputs: ['The One', 'One', 'Sala The One'],
     name: 'Sala The One',
     location: 'Sant Vicent del Raspeig (Alicante)',
@@ -355,7 +425,7 @@ export const METAL_PLACES: MetalPlace[] = [
       'Sala Rock Concept',
     ],
     name: 'Sala Urban Rock Concept',
-    location: 'Vitoria',
+    location: 'Vitoria-Gasteiz',
   },
   {
     inputs: ['Wagon', 'Sala Wagon'],
@@ -381,6 +451,11 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Sant Jordi Club'],
     name: 'Sant Jordi Club',
     location: 'Barcelona',
+  },
+  {
+    inputs: ['TBD'],
+    name: 'Sala TBD',
+    location: 'Santurtzi (Vizcaya)',
   },
   {
     inputs: [

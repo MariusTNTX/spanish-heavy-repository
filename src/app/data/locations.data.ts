@@ -1,35 +1,27 @@
 import { MetalLocation } from '../models/db.model';
 
 export const locationFlag = {
-  ANDALUCIA:
-    'assets/svg/andalucia.svg',
-  ARAGON:
-    'assets/svg/aragon.svg',
-  ASTURIAS:
-    'assets/svg/asturias.svg',
-  BALEARES:
-    'assets/svg/baleares.svg',
-  CATALUNIA:
-    'assets/svg/catalunia.svg',
-  CASTILLA_LA_MANCHA:
-    'assets/svg/castilla_la_mancha.svg',
-  CASTILLA_Y_LEON:
-    'assets/svg/castilla_y_leon.svg',
-  GALICIA:
-    'assets/svg/galicia.svg',
-  MADRID:
-    'assets/svg/madrid.svg',
-  MURCIA:
-    'assets/svg/murcia.svg',
-  NAVARRA:
-    'assets/svg/navarra.svg',
-  PAIS_VASCO:
-    'assets/svg/pais_vasco.svg',
-  VALENCIA:
-    'assets/svg/valencia.svg',
+  ANDALUCIA: 'assets/svg/andalucia.svg',
+  ARAGON: 'assets/svg/aragon.svg',
+  ASTURIAS: 'assets/svg/asturias.svg',
+  BALEARES: 'assets/svg/baleares.svg',
+  CATALUNIA: 'assets/svg/catalunia.svg',
+  CASTILLA_LA_MANCHA: 'assets/svg/castilla_la_mancha.svg',
+  CASTILLA_Y_LEON: 'assets/svg/castilla_y_leon.svg',
+  GALICIA: 'assets/svg/galicia.svg',
+  MADRID: 'assets/svg/madrid.svg',
+  MURCIA: 'assets/svg/murcia.svg',
+  NAVARRA: 'assets/svg/navarra.svg',
+  PAIS_VASCO: 'assets/svg/pais_vasco.svg',
+  VALENCIA: 'assets/svg/valencia.svg',
 };
 
 export const METAL_LOCATIONS: MetalLocation[] = [
+  {
+    inputs: ['A Coruña', 'La Coruña', 'Coruña'],
+    name: 'A Coruña',
+    community: 'GALICIA',
+  },
   {
     inputs: ['Albacete'],
     name: 'Albacete',
@@ -76,9 +68,19 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'ASTURIAS',
   },
   {
+    inputs: ['Granollers', 'Granollers (Barcelona)', 'Barcelona (Granollers)'],
+    name: 'Granollers (Barcelona)',
+    community: 'CATALUNIA',
+  },
+  {
     inputs: ['Albacete (La Gineta)', 'La Gineta (Albacete)', 'La Gineta'],
     name: 'La Gineta (Albacete)',
     community: 'CASTILLA_LA_MANCHA',
+  },
+  {
+    inputs: ['La Rinconada', 'La Rinconada (Sevilla)', 'Sevilla (La Rinconada)'],
+    name: 'La Rinconada (Sevilla)',
+    community: 'ANDALUCIA',
   },
   {
     inputs: ['Leganés', 'Leganés (Madrid)', 'Madrid (Leganés)'],
@@ -149,6 +151,11 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'GALICIA',
   },
   {
+    inputs: ['Santurtzi', 'Santurtzi (Vizcaya)', 'Vizcaya (Santurtzi)'],
+    name: 'Santurtzi (Vizcaya)',
+    community: 'PAIS_VASCO',
+  },
+  {
     inputs: ['Sevilla'],
     name: 'Sevilla',
     community: 'ANDALUCIA',
@@ -162,6 +169,11 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     inputs: ['Valladolid'],
     name: 'Valladolid',
     community: 'CASTILLA_Y_LEON',
+  },
+  {
+    inputs: ['Vigo', 'Vigo (Pontevedra)', 'Pontevedra (Vigo)'],
+    name: 'Vigo (Pontevedra)',
+    community: 'GALICIA',
   },
   {
     inputs: ['Villaverde', 'Villaverde (Madrid)', 'Madrid (Villaverde)'],

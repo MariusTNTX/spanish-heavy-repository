@@ -7,7 +7,6 @@ import { MetalBand, MetalEvent, MetalFest, MetalLocation, MetalPlace } from '../
 import { METAL_PLACES } from '../data/places.data';
 import { METAL_BANDS } from '../data/bands.data';
 import { METAL_FESTS } from '../data/fests.data';
-import { METAL_EVENTS } from '../data/events.data';
 
 @Component({
   selector: 'app-ics',
@@ -253,15 +252,16 @@ export class IcsPage {
     this.concerts?.forEach(e => e.fest && set.add(`${e.fest};${e.location};${e.place}`));
     const list = Array.from(set)
       .sort((a,b) => a.localeCompare(b))
-      .map((festLocPlace: string) => 
-        METAL_FESTS?.find(p => p.name === festLocPlace.split(';')[0] || p.inputs.includes(festLocPlace.split(';')[0])) || 
-        ({
-          inputs: [festLocPlace.split(';')[0]],
-          name: festLocPlace.split(';')[0] + '_NEW_',
+      .map((festLocPlace: string) => {
+        const foundFest = METAL_FESTS?.find(p => p.name === festLocPlace.split(';')[0] || p.inputs.includes(festLocPlace.split(';')[0]))
+        return {
+          inputs: foundFest?.inputs || [festLocPlace.split(';')[0]],
+          name: foundFest?.name || festLocPlace.split(';')[0] + '_NEW_',
           location: METAL_LOCATIONS.find(l => l.inputs.includes(festLocPlace.split(';')[1]))?.name || festLocPlace.split(';')[1],
           place: METAL_PLACES.find(p => p.inputs.includes(festLocPlace.split(';')[2]))?.name || festLocPlace.split(';')[2],
           bands: this.concerts?.find(c => c.fest === festLocPlace.split(';')[0])?.bands?.map((band: string) => METAL_BANDS.find(b => b.inputs.includes(band))?.name || band) || []
-        })
+        };
+      }
       )
       .reduce((result: MetalFest[], item: MetalFest) => {
         if(!result.some(e => e.name === item.name)){

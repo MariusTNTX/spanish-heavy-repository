@@ -982,7 +982,7 @@ export const METAL_BANDS: MetalBand[] = [
     genres: [],
   },
   {
-    inputs: ["Harm's Way", "Harms Way"],
+    inputs: ["Harm's Way", 'Harms Way'],
     name: "Harm's Way",
     genres: [],
   },

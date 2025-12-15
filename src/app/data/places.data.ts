@@ -62,11 +62,6 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Bilbao',
   },
   {
-    inputs: ['El Sol'],
-    name: 'Sala El Sol',
-    location: 'Madrid',
-  },
-  {
     inputs: ['Es Gremi Centre Musical', 'Es Gremi'],
     name: 'Es Gremi Centre Musical',
     location: 'Baleares',
@@ -87,7 +82,14 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Barcelona',
   },
   {
-    inputs: ['Garage Beat Club', 'Garage Beat', 'Garage', 'Garaje Beat Club', 'Garaje Beat', 'Garaje'],
+    inputs: [
+      'Garage Beat Club',
+      'Garage Beat',
+      'Garage',
+      'Garaje Beat Club',
+      'Garaje Beat',
+      'Garaje',
+    ],
     name: 'Garage Beat Club',
     location: 'Murcia',
   },
@@ -137,11 +139,6 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Barcelona',
   },
   {
-    inputs: ['La Trinchera'],
-    name: 'Sala La Trinchera',
-    location: 'Málaga',
-  },
-  {
     inputs: ["Lennon's Club", "Lennon's"],
     name: "Lennon's Club",
     location: 'Barcelona',
@@ -150,11 +147,6 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Marenostrum Fuengirola'],
     name: 'Marenostrum Fuengirola',
     location: 'Fuengirola (Málaga)',
-  },
-  {
-    inputs: ['Meteoro'],
-    name: 'Sala Meteoro',
-    location: 'Barcelona',
   },
   {
     inputs: ['Monte do Gozo'],
@@ -170,11 +162,6 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Music Station'],
     name: 'Music Station',
     location: 'Madrid',
-  },
-  {
-    inputs: ['Nau B1'],
-    name: 'Sala Nau B1',
-    location: 'Granollers (Barcelona)',
   },
   {
     inputs: ['Navarra Arena'],
@@ -284,6 +271,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Sevilla',
   },
   {
+    inputs: ['El Sol'],
+    name: 'Sala El Sol',
+    location: 'Madrid',
+  },
+  {
     inputs: ['Estraperlo', 'Sala Estraperlo'],
     name: 'Sala Estraperlo',
     location: 'Badalona (Barcelona)',
@@ -304,6 +296,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Madrid',
   },
   {
+    inputs: ['La Trinchera'],
+    name: 'Sala La Trinchera',
+    location: 'Málaga',
+  },
+  {
     inputs: ['Madison', 'Sala Madison'],
     name: 'Sala Madison',
     location: 'Massanassa (Valencia)',
@@ -314,9 +311,19 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Murcia',
   },
   {
+    inputs: ['Meteoro'],
+    name: 'Sala Meteoro',
+    location: 'Barcelona',
+  },
+  {
     inputs: ['Mon', 'Sala Mon'],
     name: 'Sala Mon',
     location: 'Madrid',
+  },
+  {
+    inputs: ['Nau B1'],
+    name: 'Sala Nau B1',
+    location: 'Granollers (Barcelona)',
   },
   {
     inputs: ['Nazca', 'Sala Nazca'],
@@ -396,6 +403,11 @@ export const METAL_PLACES: MetalPlace[] = [
     location: 'Sevilla',
   },
   {
+    inputs: ['TBD'],
+    name: 'Sala TBD',
+    location: 'Santurtzi (Vizcaya)',
+  },
+  {
     inputs: ['The One', 'One', 'Sala The One'],
     name: 'Sala The One',
     location: 'Sant Vicent del Raspeig (Alicante)',
@@ -451,11 +463,6 @@ export const METAL_PLACES: MetalPlace[] = [
     inputs: ['Sant Jordi Club'],
     name: 'Sant Jordi Club',
     location: 'Barcelona',
-  },
-  {
-    inputs: ['TBD'],
-    name: 'Sala TBD',
-    location: 'Santurtzi (Vizcaya)',
   },
   {
     inputs: [

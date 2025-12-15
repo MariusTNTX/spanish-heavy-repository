@@ -82,13 +82,9 @@ export class IcsPage {
             }
           };
 
-          const descriptionLines: string[] | undefined = description?.split('n*')?.map(l => l.trim());
-          const flyer = descriptionLines?.[0]?.includes('http') 
-            ? descriptionLines?.[0]?.includes('href=') 
-              ? descriptionLines.shift()?.match(/href="([^"]+)"/)?.[1]
-              : descriptionLines.shift()
-            : undefined;
-
+          const sanitizedDescription = description?.replace(/<br>\*/g, 'n*')?.replace(/<[^>]+>/g, '');
+          const descriptionLines: string[] | undefined = sanitizedDescription?.split('n*')?.map(l => l.trim());
+          const flyer = descriptionLines?.[0]?.includes('http') ? descriptionLines.shift() : undefined;
           const summaryParts = summary ? summary.split(",") : [];
           let bands: string[] | undefined = summaryParts[0]?.split('+')?.map(b => b.replace('_', '')?.trim()) || [];
           const locationName = summaryParts[1]?.trim();

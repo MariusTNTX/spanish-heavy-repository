@@ -78,7 +78,11 @@ export const METAL_LOCATIONS: MetalLocation[] = [
     community: 'CASTILLA_LA_MANCHA',
   },
   {
-    inputs: ['La Rinconada', 'La Rinconada (Sevilla)', 'Sevilla (La Rinconada)'],
+    inputs: [
+      'La Rinconada',
+      'La Rinconada (Sevilla)',
+      'Sevilla (La Rinconada)',
+    ],
     name: 'La Rinconada (Sevilla)',
     community: 'ANDALUCIA',
   },

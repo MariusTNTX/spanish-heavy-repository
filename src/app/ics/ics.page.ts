@@ -261,8 +261,7 @@ export class IcsPage {
           place: METAL_PLACES.find(p => p.inputs.includes(festLocPlace.split(';')[2]))?.name || festLocPlace.split(';')[2],
           bands: this.concerts?.find(c => c.fest === festLocPlace.split(';')[0])?.bands?.map((band: string) => METAL_BANDS.find(b => b.inputs.includes(band))?.name || band) || []
         };
-      }
-      )
+      })
       .reduce((result: MetalFest[], item: MetalFest) => {
         if(!result.some(e => e.name === item.name)){
           result.push(item);

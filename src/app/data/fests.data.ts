@@ -67,7 +67,12 @@ export const METAL_FESTS: MetalFest[] = [
     ],
   },
   {
-    inputs: ['GinetaRock', 'Gineta Rock', 'GinetaRock Fest', 'Gineta Rock Fest'],
+    inputs: [
+      'GinetaRock',
+      'Gineta Rock',
+      'GinetaRock Fest',
+      'Gineta Rock Fest',
+    ],
     name: 'GinetaRock',
     location: 'La Gineta (Albacete)',
     place: 'Recinto Salón Municipal de La Gineta',
@@ -176,7 +181,12 @@ export const METAL_FESTS: MetalFest[] = [
     bands: [],
   },
   {
-    inputs: ['Primavera Sound Fest', 'Primavera Sound', 'Primavera Sound Barcelona', 'Primavera Sound Fest Barcelona'],
+    inputs: [
+      'Primavera Sound Fest',
+      'Primavera Sound',
+      'Primavera Sound Barcelona',
+      'Primavera Sound Fest Barcelona',
+    ],
     name: 'Primavera Sound Fest',
     location: 'Barcelona',
     place: 'Parc del Fòrum',
@@ -284,7 +294,12 @@ export const METAL_FESTS: MetalFest[] = [
     bands: [],
   },
   {
-    inputs: ['VikingFest', 'Viking Fest', 'VikingFest Sevilla', 'Viking Fest Sevilla'],
+    inputs: [
+      'VikingFest',
+      'Viking Fest',
+      'VikingFest Sevilla',
+      'Viking Fest Sevilla',
+    ],
     name: 'VikingFest',
     location: 'La Rinconada (Sevilla)',
     place: 'Recinto Ferial El Abrazo',
